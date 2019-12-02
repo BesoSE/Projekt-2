@@ -209,7 +209,7 @@ for(var i=0;i<spans.length;i++){
     
 }}
     
-},5);
+},20);
 
 function clear(){
     
