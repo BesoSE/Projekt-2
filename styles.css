@@ -67,8 +67,8 @@ body{
     text-align: center;
     background:black;
     color: white;
-    top:300px;
-    left:530px;
+    top:260px;
+    left:300px;
     
 }
 
@@ -171,6 +171,6 @@ span{
     position: absolute;
     background: greenyellow;
     border-radius: 50px;
-    top:370px;
-    left:630px;
+    top:340px;
+    left:400px;
 }

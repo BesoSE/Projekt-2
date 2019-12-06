@@ -1,7 +1,7 @@
 let start=document.getElementById('startBtn');
 let main=document.querySelector('.main-input');
 let lines=document.querySelectorAll('.line');
-
+let cont=document.querySelector('.container');
 let score=0;
 let result=document.querySelector('.displayresult');
 let tekst=[];
@@ -9,6 +9,7 @@ let send;
 let div;
 let audio=new Audio('GameOver.mp3');
 let restart=document.createElement("img");
+
 restart.setAttribute("src","https://icon-library.net/images/restart-icon/restart-icon-16.jpg");
 restart.setAttribute("class","restart");
 restart.setAttribute("onclick","reload()");
@@ -47,6 +48,7 @@ function sav(){
         }
         main.value="";
     }
+    
     
     
 }  
@@ -209,14 +211,16 @@ for(var i=0;i<spans.length;i++){
     
 }}
     
-},5);
+},20);
 
 function clear(){
     
     clearInterval(move);
    
-   document.body.appendChild(div);
-   document.body.appendChild(restart);
+   cont.appendChild(div);
+   cont.appendChild(restart);
+   main.setAttribute("class","hidden");
+
    kont=document.querySelector(".container");
    kont.style.background="red";
    
